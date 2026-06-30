@@ -1,20 +1,30 @@
 import Navbar from '../components/Navbar/Navbar';
 import Hero from '../components/Hero/Hero';
-import FeatureTabs from '../components/FeatureTabs/FeatureTabs';
-import ScrollSection from '../components/ScrollSection/ScrollSection';
-import DashboardPreview from '../components/DashboardPreview/DashboardPreview';
+import TrustBar from '../components/TrustBar/TrustBar';
+import MarqueeBar from '../components/MarqueeBar/MarqueeBar';
+import Stats from '../components/Stats/Stats';
+import Platform from '../components/Platform/Platform';
+import Integrations from '../components/Integrations/Integrations';
+import Process from '../components/Process/Process';
+import UseCases from '../components/UseCases/UseCases';
+import Security from '../components/Security/Security';
+import CTA from '../components/CTA/CTA';
 import Footer from '../components/Footer/Footer';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0a0a0f] text-white overflow-x-hidden">
+    <div style={{ overflowX: 'hidden' }}>
       <Navbar />
-      <main>
-        <Hero />
-        <FeatureTabs />
-        <ScrollSection />
-        <DashboardPreview />
-      </main>
+      <Hero />
+      <TrustBar />
+      <MarqueeBar />
+      <Stats />
+      <Platform />
+      <Integrations />
+      <Process />
+      <UseCases />
+      <Security />
+      <CTA />
       <Footer />
     </div>
   );
